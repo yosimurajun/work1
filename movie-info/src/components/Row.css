@@ -1,0 +1,29 @@
+.row {
+  margin: 30px 100px;
+}
+.row__title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.wrap {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.wrap::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.row__poster {
+  width: 100%;
+  max-width: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+.row__poster:hover {
+  transform: scale(1.08);
+}
