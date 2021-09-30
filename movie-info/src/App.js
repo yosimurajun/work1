@@ -2,15 +2,25 @@
 import './App.css';
 import Header from './components/Header';
 import Body from './components/Body';
-import Banner from './components/Banner';
+import Detail from './components/Detail';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Banner />
-      <Body />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Body />
+          </Route>
+          <Route exact path="/detail/:id">
+            <Detail />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

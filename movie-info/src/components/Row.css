@@ -7,6 +7,7 @@
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .wrap {
@@ -15,15 +16,45 @@
   overflow-y: hidden;
 }
 .wrap::-webkit-scrollbar {
-  overflow: hidden;
+  width: 10px;
+  /* background-color: pink; */
 }
-
+.wrap::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.wrap::-webkit-scrollbar-track {
+  background-color: rgb(66, 65, 65);
+  border-radius: 10px;
+}
+.wrap__movies {
+  color: white;
+  text-align: center;
+}
+.wrap__movies > a {
+  text-decoration: none;
+  color: #fff;
+}
 .row__poster {
-  width: 100%;
   max-width: 200px;
+  border-radius: 4px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
-.row__poster:hover {
+.actor {
+  max-width: 120px;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.over:hover {
   transform: scale(1.08);
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 30px;
+  }
 }
