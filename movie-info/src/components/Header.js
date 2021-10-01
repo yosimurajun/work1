@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import SearchInput from './SearchInput';
 import Nav from './Nav';
 
 function Header() {
@@ -33,6 +34,7 @@ function Header() {
             <div className="header__logo">
                 The Movie
             </div>
+            <SearchInput />
             <Nav />
         </div>
     )

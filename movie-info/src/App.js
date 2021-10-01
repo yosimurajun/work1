@@ -5,6 +5,7 @@ import Body from './components/Body';
 import Detail from './components/Detail';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SearchMovies from './components/SearchMovies';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/detail/:id">
             <Detail />
+          </Route>
+          <Route exact path="/search/:query">
+            <SearchMovies />
           </Route>
         </Switch>
       </div>

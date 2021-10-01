@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 
 
 const IMG_URL = 'https://image.tmdb.org/t/p/original';
-const YOUTUBE_URL = 'https://www.youtube.com/watch?v=';
+// const YOUTUBE_URL = 'https://www.youtube.com/watch?v=';
 
 const opts = {
     height: '250',
@@ -33,12 +33,21 @@ const items = (title, movie) =>  {
 
     }  else if(title === 'Videos') {
         return (
-            <>
+            
                 <YouTube videoId={movie.key} opts={opts}  onReady={_onReady} />
+            
+        )
+
+    }  else if(title === 'Reviews') {
+        // console.log(review);
+        return (
+            <>
+                {/* <p>{review}</p> */}
             </>
         )
 
-    } else {
+    }
+     else {
         return (
             <Link to={"/detail/"+movie.id}>
                 <img  key={movie.id} className={"row__poster over"} src={IMG_URL + movie?.backdrop_path} alt={ movie.title || movie.original_title } />
@@ -54,25 +63,28 @@ function Row({ title, request}) {
 
     const [movies, setMovies] = useState([]);
 
-    
     useEffect(() => {
         async function requestMovies()  {
             
             const getMovies = await _axios.get(request);
-            // console.log(title, getMovies.data.results);
+            // console.log(title, getMovies);
             if(title === 'Actors') {
                 setMovies(getMovies.data?.cast.slice(0, 14));
-            } else if(title === 'Videos') {
-                setMovies(getMovies.data?.results);
-                console.log(movies);
+            // } else if(title === 'Videos') {
+            //     setMovies(getMovies.data?.results);
+            // } else if(title === "Reviews") {
+            //     console.log(getMovies.data?.results);
+            //     // setMovies(getMovies.data?.results);
             }
             else {
                 setMovies(getMovies.data?.results);
+                
             }
 
             
         }
         requestMovies();
+        
         
     }, [title, request, movies]);
 

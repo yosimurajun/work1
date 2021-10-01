@@ -3,6 +3,7 @@ const api = '6e1ab1cb41b30882be3f910fb7aeee1a';
 
 export const requests = {
     getDetail: `?api_key=${api}&language=en-US`,
+    getSearch: `?api_key=${api}&language=en-US&query=`,
     getVideos: `/videos?api_key=${api}&language=en-US`,
     getActors: `/credits?api_key=${api}&language=en-US`,
     popular: `/popular?api_key=${api}&language=en-US`,
