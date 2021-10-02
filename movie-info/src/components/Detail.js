@@ -61,8 +61,8 @@ function Detail() {
             </div>
             
             <div className="gradient" />
-            <Row title="Actors" request={movie.id+requests.getActors} />
-            <Row title="Videos" request={movie.id+requests.getVideos} />
+            <Row title="Actors" request={movie.id + requests.getActors} />
+            <Row title="Videos" request={movie.id + requests.getVideos} />
             {/* <Row title="Reviews" request={movie.id + requests.getReviews} /> */}
         </div>
     )

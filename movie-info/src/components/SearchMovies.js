@@ -31,9 +31,9 @@ function SearchMovies() {
             <div className="lists">
             {
                 data.map(list => {
-                    return  <Link to={"/detail/"+list.id}>
+                    return  <Link className="list__Link" to={"/detail/"+list.id}>
                                     <img className="item__poster" src={IMG_URL+list.poster_path} alt={list.title} />
-                                    <p style={{color: 'white'}}>{list.title}</p>
+                                    <p>{list.title}</p>
                             </Link>
                 })
             }

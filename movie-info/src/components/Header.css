@@ -7,20 +7,49 @@
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  /* padding: 0 30px; */
+  padding: 15px 0;
   transition: background-color 0.3s ease-out;
 }
 
 .header__logo {
   background-color: red;
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 30px;
   border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__logo:hover {
+  color: #000;
 }
 
 .active {
   background-color: #000;
+}
+
+.search__wrap {
+  position: relative;
+}
+.search__input {
+  width: 350px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+}
+.search__button {
+  position: absolute;
+  width: 100px;
+  padding: 10px 20px;
+  margin-left: -100px;
+  border-radius: 0;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }

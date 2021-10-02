@@ -11,7 +11,7 @@ function Nav() {
         <div className="nav">
             <Link to="/">Home</Link>
             <a href="#" >About</a>
-            <a href="#" >List</a>
+            <Link to="/list">List</Link>
         </div>
     )
 }

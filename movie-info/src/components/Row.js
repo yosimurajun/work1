@@ -39,10 +39,9 @@ const items = (title, movie) =>  {
         )
 
     }  else if(title === 'Reviews') {
-        // console.log(review);
         return (
             <>
-                {/* <p>{review}</p> */}
+                <p>{movie}</p>
             </>
         )
 
@@ -62,6 +61,7 @@ const items = (title, movie) =>  {
 function Row({ title, request}) {
 
     const [movies, setMovies] = useState([]);
+    
 
     useEffect(() => {
         async function requestMovies()  {
@@ -77,6 +77,7 @@ function Row({ title, request}) {
             //     // setMovies(getMovies.data?.results);
             }
             else {
+                console.log(getMovies.data?.results);
                 setMovies(getMovies.data?.results);
                 
             }

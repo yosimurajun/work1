@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import SearchInput from './SearchInput';
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -31,9 +32,9 @@ function Header() {
 
     return (
         <div className={ active ? "header active" : "header"}>
-            <div className="header__logo">
+            <Link className="header__logo" to="/">
                 The Movie
-            </div>
+            </Link>
             <SearchInput />
             <Nav />
         </div>

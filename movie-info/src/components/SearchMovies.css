@@ -4,17 +4,35 @@
   padding: 0 100px;
   padding-bottom: 100px;
 }
-
+.search__title {
+  margin-bottom: 20px;
+}
 .lists {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
   gap: 20px;
+  text-align: center;
+}
+.list__Link {
+  text-decoration: none;
+  color: #fff;
+}
+.list__Link:hover {
+  color: red;
 }
 
-.list {
-  /* display: flex; */
-}
 .item__poster {
   width: 100%;
-  /* max-width: 160px; */
+  height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    padding: 0 40px;
+  }
+  .lists {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
 }

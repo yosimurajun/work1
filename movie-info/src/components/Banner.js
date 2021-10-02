@@ -38,7 +38,7 @@ function Banner() {
             <div className="banner__wrap" >
                 <h1 className="banner__title">{movie.title}</h1>
                 <p className="banner__para" >{subStr(movie.overview, 150)}</p>
-                <Link to={`/detail/${movie.id}`}>
+                <Link className="banner__button" to={`/detail/${movie.id}`}>
                     Info
                 </Link>
             </div>

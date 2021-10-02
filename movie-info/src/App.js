@@ -6,6 +6,7 @@ import Detail from './components/Detail';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchMovies from './components/SearchMovies';
+import List from './components/List';
 
 function App() {
   return (
@@ -16,12 +17,16 @@ function App() {
           <Route exact path="/">
             <Body />
           </Route>
+          <Route exact path="/list">
+            <List />
+          </Route>
           <Route exact path="/detail/:id">
             <Detail />
           </Route>
           <Route exact path="/search/:query">
             <SearchMovies />
           </Route>
+          
         </Switch>
       </div>
     </Router>
