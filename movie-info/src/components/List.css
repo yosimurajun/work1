@@ -1,0 +1,18 @@
+.list__movies {
+  padding: 150px 100px;
+  display: flex;
+  flex: 1;
+}
+
+.list__movies__sidebar {
+  flex: 1;
+  color: #fff;
+}
+
+.list__movies__content {
+  flex: 10;
+}
+.list__genre_wrap {
+  display: flex;
+  flex-direction: column;
+}

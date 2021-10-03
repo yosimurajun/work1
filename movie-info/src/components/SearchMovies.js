@@ -3,9 +3,10 @@ import { useParams, Link  } from 'react-router-dom';
 import { _axios } from '../Axios';
 import { requests } from '../request';
 import './SearchMovies.css';
+import MovieList from './MovieList';
 
 
-const IMG_URL = 'https://image.tmdb.org/t/p/original';
+
 
 function SearchMovies() {
 
@@ -28,16 +29,7 @@ function SearchMovies() {
         return (
         <div className="search">
             <h1 className="search__title">Search : {query}</h1>
-            <div className="lists">
-            {
-                data.map(list => {
-                    return  <Link className="list__Link" to={"/detail/"+list.id}>
-                                    <img className="item__poster" src={IMG_URL+list.poster_path} alt={list.title} />
-                                    <p>{list.title}</p>
-                            </Link>
-                })
-            }
-            </div>
+            <MovieList data={data} />
         </div>
     )
 }

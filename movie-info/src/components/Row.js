@@ -77,18 +77,16 @@ function Row({ title, request}) {
             //     // setMovies(getMovies.data?.results);
             }
             else {
-                console.log(getMovies.data?.results);
-                setMovies(getMovies.data?.results);
-                
+                // console.log(getMovies.data?.results);
+                setMovies(getMovies.data?.results);    
             }
 
             
         }
         requestMovies();
         
-        
-    }, [title, request, movies]);
-
+    }, [title, request]);
+    
     return (
         <div className="row">
             <h1 className="row__title">{title}</h1>
