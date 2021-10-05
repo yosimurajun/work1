@@ -1,18 +1,50 @@
 .list__movies {
-  padding: 150px 100px;
+  padding: 120px 30px;
   display: flex;
-  flex: 1;
 }
 
 .list__movies__sidebar {
-  flex: 1;
+  flex: 3;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
 }
 
 .list__movies__content {
-  flex: 10;
+  flex: 15;
 }
-.list__genre_wrap {
-  display: flex;
-  flex-direction: column;
+
+.checkbox {
+  margin-bottom: 10px;
+  border: 2px solid red;
+  background-color: red;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.checkbox:hover {
+  border: 2px solid red;
+  background-color: #000;
+}
+
+.input__checkbox {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .list__movies {
+    padding: 120px 30px;
+    flex-direction: column;
+  }
+  .list__movies__sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 0;
+    font-size: 15px;
+  }
+  .checkbox {
+    margin-right: 6px;
+  }
 }

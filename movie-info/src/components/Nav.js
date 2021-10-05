@@ -10,7 +10,6 @@ function Nav() {
     return (
         <div className="nav">
             <Link to="/">Home</Link>
-            <a href="#" >About</a>
             <Link to="/list">List</Link>
         </div>
     )

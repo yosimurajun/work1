@@ -27,7 +27,7 @@ function Detail() {
 
 
     }, [id]);
-    // console.log(movie);
+    console.log(genres);
 
     return (
         <div className="detail" >
@@ -40,17 +40,43 @@ function Detail() {
                         </a>
                         {
                             genres.map(g => {
-                                if(g.name.toLowerCase() === 'comedy') {
+                                if(g.name.toLowerCase() === 'action') {
                                     return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
-                                } else if(g.name.toLowerCase() === 'action') {
+                                } else if(g.name.toLowerCase() === 'adventure') {
                                     return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
-                                } else if(g.name.toLowerCase() === 'science fiction') {
+                                } else if(g.name.toLowerCase() === 'animation') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'comedy') {
                                     return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
                                 } else if(g.name.toLowerCase() === 'crime') {
                                     return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'documentary') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'drama') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'family') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'fantasy') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'horror') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'music') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'mystery') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'romance') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'science fiction') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'tv movie') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
                                 } else if(g.name.toLowerCase() === 'thriller') {
                                     return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
-                                } 
+                                } else if(g.name.toLowerCase() === 'war') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                } else if(g.name.toLowerCase() === 'western') {
+                                    return <span className={'genre_tag '+g.name.toLowerCase() }>{g.name}</span>
+                                }
                             })
                         }
                         <p className="detail__para" >{movie?.overview}</p>

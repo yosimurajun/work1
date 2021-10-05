@@ -47,20 +47,64 @@
 }
 
 /*  genres */
-.comedy {
-  background-color: green;
-}
 .action {
   background-color: red;
 }
-.science {
-  background-color: darkblue;
+.adventure {
+  background-color: orange;
+}
+.animation {
+  background-color: cornflowerblue;
+}
+
+.comedy {
+  background-color: green;
 }
 .crime {
+  background-color: blue;
+}
+
+.documentary {
+  background-color: navy;
+}
+.drama {
+  background-color: purple;
+}
+.family {
   background-color: darkred;
 }
+.fantasy {
+  background-color: darkgoldenrod;
+}
+.history {
+  background-color: darkgreen;
+}
+.horror {
+  background-color: darkblue;
+}
+.music {
+  background-color: darkcyan;
+}
+.mystery {
+  background-color: darkmagenta;
+}
+.romance {
+  background-color: darksalmon;
+}
+.science {
+  background-color: darkturquoise;
+}
+.tv {
+  background-color: lightcoral;
+}
 .thriller {
-  background-color: darkslategray;
+  background-color: slategrey;
+}
+.war {
+  background-color: black;
+}
+.western {
+  background-color: cadetblue;
 }
 
 @media screen and (max-width: 768px) {
